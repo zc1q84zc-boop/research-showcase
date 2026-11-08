@@ -1,0 +1,62 @@
+[
+  {
+    "id": "flat_hold",
+    "title": "平地保持",
+    "video": "demos/flat_hold.mp4",
+    "preview": "demos/flat_hold.png",
+    "bytes": 712640,
+    "sha256": "94f1816c88274bbf54c3f3fbdc3c06e359b3a29e9dca3c99b7f767acedaa877e",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_hold__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  },
+  {
+    "id": "flat_forward_050",
+    "title": "平地前进 0.5 m/s",
+    "video": "demos/flat_forward_050.mp4",
+    "preview": "demos/flat_forward_050.png",
+    "bytes": 1243457,
+    "sha256": "8d5b1e3e3feb7089628e7cc8ea943d6bf39ce30be18949b57c5b6664e85972ec",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_forward_050__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  },
+  {
+    "id": "flat_turn_left_90",
+    "title": "左转 90°",
+    "video": "demos/flat_turn_left_90.mp4",
+    "preview": "demos/flat_turn_left_90.png",
+    "bytes": 1492665,
+    "sha256": "513ad08a6d80f6f67e605440271ccc4836bf2ef7efbcee66e3ecbcc8ada21a58",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_turn_left_90__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  },
+  {
+    "id": "slope_up_10",
+    "title": "10° 上坡",
+    "video": "demos/slope_up_10.mp4",
+    "preview": "demos/slope_up_10.png",
+    "bytes": 2451268,
+    "sha256": "abafd8dc1debeae12a1aebcf34cba9a199d4b5867b744c333d6d842702158586",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/slope_up_10__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  },
+  {
+    "id": "stairs_up_12",
+    "title": "12 cm 楼梯",
+    "video": "demos/stairs_up_12.mp4",
+    "preview": "demos/stairs_up_12.png",
+    "bytes": 1585597,
+    "sha256": "b118549969814b638b3b15ca08d10f6da8f6861af63be26684c2b4b03a2713a4",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/stairs_up_12__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  },
+  {
+    "id": "rough_medium",
+    "title": "中等粗糙地形",
+    "video": "demos/rough_medium.mp4",
+    "preview": "demos/rough_medium.png",
+    "bytes": 3871141,
+    "sha256": "26bb35f031a5de7478bd61cad5aa20b8f6ac954e39758736068a9151af7e25ed",
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/rough_medium__center/episode.mp4",
+    "scope": "MuJoCo simulation; 2026-08-12; center replicate only"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "scenario": "flat_forward_050",
+  "provisional_pass": true,
+  "completed_evaluation": true,
+  "fallen": false,
+  "course_complete": false,
+  "termination_reason": "time_limit",
+  "simulated_time_s": 9.500000000000085,
+  "scored_time_s": 8.0,
+  "progress_m": 3.3534214451810214,
+  "forward_velocity_rmse_mps": 0.0811795058849514,
+  "max_abs_cross_track_error_m": 0.00867874441865278
+}

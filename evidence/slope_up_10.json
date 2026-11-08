@@ -1,0 +1,13 @@
+{
+  "scenario": "slope_up_10",
+  "provisional_pass": true,
+  "completed_evaluation": true,
+  "fallen": false,
+  "course_complete": true,
+  "termination_reason": "course_complete",
+  "simulated_time_s": 11.250000000000359,
+  "scored_time_s": 9.75,
+  "progress_m": 4.1973233765768585,
+  "forward_velocity_rmse_mps": 0.07459601378580256,
+  "max_abs_cross_track_error_m": 0.013576941562955021
+}

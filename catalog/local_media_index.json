@@ -1,0 +1,806 @@
+[
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/deployment_acceptance_20260812/episode.mp4",
+    "bytes": 1243492,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/20260812-142151-interactive/interactive-screen.mp4",
+    "bytes": 10386530,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/deployment_smoke_20260812/episode.mp4",
+    "bytes": 685773,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/quick_check/episode.mp4",
+    "bytes": 8387367,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/20260812-142313-interactive/interactive-screen.mp4",
+    "bytes": 9961520,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/20260812-143612-interactive/interactive-screen.mp4",
+    "bytes": 69278042,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_turn_left_90__center/episode.mp4",
+    "bytes": 1492665,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/stairs_up_12__center/episode.mp4",
+    "bytes": 1585597,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_hold__center/episode.mp4",
+    "bytes": 712640,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/rough_medium__center/episode.mp4",
+    "bytes": 3871141,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/flat_forward_050__center/episode.mp4",
+    "bytes": 1243457,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/slope_up_10__center/episode.mp4",
+    "bytes": 2451268,
+    "uploaded": true,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/my_quick_check/episode.mp4",
+    "bytes": 1711112,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "B2_sim2real/reproduced_results/20260812-142550-interactive/interactive-screen.mp4",
+    "bytes": 317350,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/sim-walk-160-5-5s-20260811.webm",
+    "bytes": 142695291,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/stairs/stairs-up-15cm-oblique15-20260812-r1/episode.mp4",
+    "bytes": 1780011,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/stairs/stairs-up-12cm-20260812-r1/episode.mp4",
+    "bytes": 1710260,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-141912-stairs_20cm.mp4",
+    "bytes": 793811,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r5.mp4",
+    "bytes": 3407900,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214839-stairs_18cm.mp4",
+    "bytes": 469955,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-141703-flat.mp4",
+    "bytes": 2105486,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-154135-zip-square-stair-arena.mp4",
+    "bytes": 98324,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-161219-zip-square-stair-arena.mp4",
+    "bytes": 4393165,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214543-stairs_18cm.mp4",
+    "bytes": 254537,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-160529-flat.mp4",
+    "bytes": 182913,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-204650-flat.mp4",
+    "bytes": 305813,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-recording-smoke-r2-20260812.mp4",
+    "bytes": 667209,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-211651-stairs_18cm.mp4",
+    "bytes": 496059,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-160458-zip-square-stair-arena.mp4",
+    "bytes": 8777333,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-151053-flat.mp4",
+    "bytes": 2732095,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-174700-stairs_15cm.mp4",
+    "bytes": 711317,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260813-181938-mud.mp4",
+    "bytes": 2966803,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-dds-stairs-15cm-oblique-handover-20260812-r3.mp4",
+    "bytes": 1823561,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-184422-stairs_reference_12cm.mp4",
+    "bytes": 531090,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260813-175802-grass.mp4",
+    "bytes": 967206,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-150355-flat.mp4",
+    "bytes": 339535,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-dds-stairs-15cm-oblique-handover-20260812-r2.mp4",
+    "bytes": 2370048,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-185839-stairs_20cm.mp4",
+    "bytes": 574379,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-150329-flat.mp4",
+    "bytes": 338436,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-204724-stairs_10cm.mp4",
+    "bytes": 611688,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-dds-stairs-15cm-oblique-v025-handover-20260812-r4.mp4",
+    "bytes": 2035793,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-204424-flat.mp4",
+    "bytes": 218098,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-175812-stairs_10cm.mp4.recording.mp4",
+    "bytes": 27805394,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220416-stairs_18cm.mp4",
+    "bytes": 410890,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-154547-stairs_20cm.mp4",
+    "bytes": 640722,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-144631-flat.mp4",
+    "bytes": 5382949,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214701-stairs_18cm.mp4",
+    "bytes": 416065,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220525-stairs_18cm.mp4",
+    "bytes": 411036,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-flat-walk-5s-20260812-r3.mp4",
+    "bytes": 2166691,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-150543-flat.mp4",
+    "bytes": 311698,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-154039-stairs_15cm.mp4",
+    "bytes": 526246,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-185759-stairs_10cm.mp4",
+    "bytes": 967780,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-145821-stairs_20cm.mp4",
+    "bytes": 103031940,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-212003-stairs_18cm.mp4",
+    "bytes": 1278656,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214424-stairs_18cm.mp4",
+    "bytes": 688907,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-flat-walk-5s-20260812-r2.mp4",
+    "bytes": 3895235,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-174636-stairs_10cm.mp4",
+    "bytes": 701559,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-153936-stairs_15cm.mp4",
+    "bytes": 700553,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260813-182421-mud.mp4.recording.mp4",
+    "bytes": 8915023,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220400-stairs_18cm.mp4",
+    "bytes": 401562,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-console-20260813-01.mp4",
+    "bytes": 6138452,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-153916-stairs_18cm.mp4",
+    "bytes": 630999,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-142049-stairs_20cm.mp4",
+    "bytes": 827712,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-145616-stairs_20cm.mp4",
+    "bytes": 557411,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-recording-smoke-20260812.mp4",
+    "bytes": 696114,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-181603-stairs_10cm.mp4",
+    "bytes": 1154352,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-154909-stairs_20cm.mp4.recording.mp4",
+    "bytes": 175898652,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-161645-zip-square-stair-arena.mp4",
+    "bytes": 2640575,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-145701-stairs_20cm.mp4",
+    "bytes": 414004,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-211304-stairs_18cm.mp4",
+    "bytes": 891447,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r3.mp4",
+    "bytes": 4194352,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-162619-zip-square-stair-arena.mp4",
+    "bytes": 997668,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-153335-gravel.mp4",
+    "bytes": 5667814,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-204853-stairs_18cm.mp4",
+    "bytes": 480684,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220122-stairs_18cm.mp4",
+    "bytes": 491617,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260813-181329-grass.mp4",
+    "bytes": 1065579,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-160616-flat.mp4",
+    "bytes": 512274,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-175525-stairs_10cm.mp4",
+    "bytes": 5186860,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-175314-flat.mp4",
+    "bytes": 4515938,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-145345-flat.mp4",
+    "bytes": 3127913,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-153719-flat.mp4",
+    "bytes": 774617,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-dds-stairs-15cm-oblique-handover-20260812-r1.mp4",
+    "bytes": 1188176,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260813-181927-stairs_20cm.mp4",
+    "bytes": 222617,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-operator-ui-speed-presets-20260812-r2.mp4",
+    "bytes": 1420657,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-161941-zip-square-stair-arena.mp4",
+    "bytes": 10226994,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-211438-stairs_18cm.mp4",
+    "bytes": 611041,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r2.mp4",
+    "bytes": 3818068,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-183747-stairs_10cm.mp4",
+    "bytes": 1486914,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214918-stairs_18cm.mp4",
+    "bytes": 532363,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-143957-flat.mp4",
+    "bytes": 6565970,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-145516-flat.mp4",
+    "bytes": 382906,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-211203-stairs_18cm.mp4",
+    "bytes": 676318,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-175812-stairs_10cm.mp4",
+    "bytes": 9831863,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-141959-stairs_20cm.mp4",
+    "bytes": 718151,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-144318-flat.mp4",
+    "bytes": 630612,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260821-145553-stairs_20cm.mp4",
+    "bytes": 3551814,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-154524-stairs_20cm.mp4",
+    "bytes": 325873,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220345-stairs_18cm.mp4",
+    "bytes": 402396,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220541-stairs_18cm.mp4",
+    "bytes": 436662,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-161622-flat.mp4",
+    "bytes": 339432,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-200800-stairs_10cm.mp4",
+    "bytes": 460762,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220053-stairs_18cm.mp4",
+    "bytes": 133450,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-143639-flat.mp4",
+    "bytes": 1848772,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-182538-stairs_20cm.mp4",
+    "bytes": 766909,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-144147-flat.mp4",
+    "bytes": 412980,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-153850-stairs_20cm.mp4",
+    "bytes": 620485,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-214608-stairs_18cm.mp4",
+    "bytes": 451885,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-flat-walk-5s-20260812-r1.mp4",
+    "bytes": 4194352,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r5-final.mp4",
+    "bytes": 816944,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-145633-flat.mp4",
+    "bytes": 14494418,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-154252-zip-square-stair-arena.mp4",
+    "bytes": 3323236,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-152125-stairs_20cm.mp4",
+    "bytes": 1279115,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r1.mp4",
+    "bytes": 2883632,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-151815-stairs_20cm.mp4",
+    "bytes": 444335,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260827-144419-zip-square-stair-arena.mp4",
+    "bytes": 4438914,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-220556-stairs_18cm.mp4",
+    "bytes": 562163,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260814-151317-flat.mp4",
+    "bytes": 8830776,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-181811-stairs_20cm.mp4",
+    "bytes": 693503,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-161857-zip-square-stair-arena.mp4",
+    "bytes": 2255351,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-161315-zip-square-stair-arena.mp4",
+    "bytes": 1572963,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-211133-stairs_18cm.mp4",
+    "bytes": 120419,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260820-162653-zip-square-stair-arena.mp4",
+    "bytes": 2483410,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-20260818-181450-stairs_10cm.mp4",
+    "bytes": 1580398,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-keyboard-teleop-20260812-r4.mp4",
+    "bytes": 3736684,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/sim-operator-ui-speed-presets-20260812-r1.mp4",
+    "bytes": 1003331,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/videos/remote-onnx-estop-sim-20260812.mp4",
+    "bytes": 800220,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "b2_control_stack/logs/comparisons/crouch-20260827/crouch_1.mp4",
+    "bytes": 918179,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "桌面/Clear_ATEC2026_Simulation_Challenge/doc/baseline_act.gif",
+    "bytes": 2630369,
+    "uploaded": false,
+    "category": "upstream_reference"
+  },
+  {
+    "project_relative_path": "桌面/Clear_ATEC2026_Simulation_Challenge/doc/task_a.gif",
+    "bytes": 4112153,
+    "uploaded": false,
+    "category": "upstream_reference"
+  },
+  {
+    "project_relative_path": "桌面/Clear_ATEC2026_Simulation_Challenge/doc/task_d.gif",
+    "bytes": 22388868,
+    "uploaded": false,
+    "category": "upstream_reference"
+  },
+  {
+    "project_relative_path": "桌面/Clear_ATEC2026_Simulation_Challenge/doc/task_b.gif",
+    "bytes": 1488330,
+    "uploaded": false,
+    "category": "upstream_reference"
+  },
+  {
+    "project_relative_path": "桌面/Clear_ATEC2026_Simulation_Challenge/doc/baseline.gif",
+    "bytes": 6709616,
+    "uploaded": false,
+    "category": "upstream_reference"
+  },
+  {
+    "project_relative_path": "视频/录屏/录屏 2026-08-11 20-02-20.webm",
+    "bytes": 210405,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  },
+  {
+    "project_relative_path": "视频/录屏/录屏 2026-08-11 20-06-50.webm",
+    "bytes": 15090861,
+    "uploaded": false,
+    "category": "local_recording_unreviewed"
+  }
+]

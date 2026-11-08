@@ -1,0 +1,13 @@
+{
+  "scenario": "stairs_up_12",
+  "provisional_pass": true,
+  "completed_evaluation": true,
+  "fallen": false,
+  "course_complete": true,
+  "termination_reason": "course_complete",
+  "simulated_time_s": 8.129999999999871,
+  "scored_time_s": 6.63,
+  "progress_m": 2.945481537593791,
+  "forward_velocity_rmse_mps": 0.07622955905881582,
+  "max_abs_cross_track_error_m": 0.09429257150292457
+}

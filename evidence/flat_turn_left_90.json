@@ -1,0 +1,13 @@
+{
+  "scenario": "flat_turn_left_90",
+  "provisional_pass": true,
+  "completed_evaluation": true,
+  "fallen": false,
+  "course_complete": false,
+  "termination_reason": "time_limit",
+  "simulated_time_s": 9.500000000000085,
+  "scored_time_s": 8.0,
+  "progress_m": 2.828906888058484,
+  "forward_velocity_rmse_mps": 0.09263867985606056,
+  "max_abs_cross_track_error_m": 0.20356218552773894
+}

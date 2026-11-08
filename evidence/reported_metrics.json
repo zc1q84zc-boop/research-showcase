@@ -1,0 +1,32 @@
+{
+  "notice": "Historical source-reported metrics, not rerun in this inventory.",
+  "segmentation_v4": {
+    "source": "real_piper/yolo_checkpoint/TRAINING_REPORT_V4.md",
+    "date": "2026-08-26",
+    "test_images": 215,
+    "mask_precision": 0.936,
+    "mask_recall": 0.778,
+    "mask_map50": 0.914,
+    "mask_map50_95": 0.792,
+    "model_only_inference_ms": 5.9
+  },
+  "hand_eye": {
+    "source": "real_piper/calibration/DELIVERY_README.md",
+    "camera_reprojection_rms_px": 0.473,
+    "translation_rms_mm": 6.5509,
+    "rotation_rms_deg": 1.2771,
+    "workcell_geometry_verified": false
+  },
+  "b2_smoke": {
+    "source": "B2_sim2real/reproduced_results/policy-smoke-20260812-141818/summary.json",
+    "episodes_completed": 6,
+    "provisional_passes": 6,
+    "falls": 0
+  },
+  "umi_public_aggregate": {
+    "input_episodes": 3975,
+    "retained_episodes": 3423,
+    "quarantined_episodes": 552,
+    "source": "https://github.com/zc1q84zc-boop/umi-arena-cup-screening-methods"
+  }
+}

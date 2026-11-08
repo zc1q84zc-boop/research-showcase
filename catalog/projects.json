@@ -1,0 +1,384 @@
+[
+  {
+    "id": "odineye-p1a",
+    "title": "OdinEye P1A：几何条件 BEV 感知",
+    "area": "视觉与空间感知",
+    "status": "源码与技术说明已存档；本次未复跑训练",
+    "summary": "RGB 历史与标定相机高度，经冻结 VGGT-Ω 和运行时几何构建器，生成当前帧及历史融合 BEV。",
+    "features": [
+      "共享一次 VGGT 前向；几何条件解码",
+      "512×512 单帧与 800×800 融合输出",
+      "视场外 unknown；证据置信度与几何质量门控",
+      "直接观测与遮挡补全分区监督，direct-priority PCGrad"
+    ],
+    "evidence": [
+      "VggtBev/README.md；src/ 与 configs/ 存在"
+    ],
+    "limits": [
+      "未找到本机 runs/artifacts 成果文件，不能据技术说明声称训练完成或精度达标",
+      "骨干、权重及训练数据不随汇总发布"
+    ],
+    "source": [
+      "https://github.com/cicaburnwood-crypto/VggtBev"
+    ],
+    "entry": "odineye-p1a-train --config configs/p1a_local_smoke.toml --data-only"
+  },
+  {
+    "id": "odineye-p2b",
+    "title": "OdinEye P2B：双专家与尺度 Token",
+    "area": "视觉与空间感知",
+    "status": "实验实现已存档；效果待核验",
+    "summary": "冻结 VGGT token memory 后，Observed、Guessed 与 Routing 路径处理直接观测和遮挡补全，并学习米制尺度。",
+    "features": [
+      "P2B-NLL：Beta evidence 与 evidential NLL",
+      "P2B-BCE：Bernoulli 分类确定性",
+      "RGB-only 推理与 6.5 m / 10 m BEV 合同",
+      "单次骨干提取；专家路径分离"
+    ],
+    "evidence": [
+      "VggtBev-worktrees/p1b-bce/README.md；当前说明明确区分 P2B 与 legacy P1B"
+    ],
+    "limits": [
+      "BCE 置信度不能表述成认知不确定性",
+      "没有在本次盘点中核验最终 checkpoint 或验证指标",
+      "旧 P1B 与新 P2B checkpoint schema 不兼容"
+    ],
+    "source": [
+      "https://github.com/cicaburnwood-crypto/VggtBev"
+    ],
+    "entry": "python -m vggt_bev_method1.cli_train_p2b --config CONFIG.toml"
+  },
+  {
+    "id": "vggt-method2",
+    "title": "VGGT Method II：观测区域 BEV 与模拟器对照",
+    "area": "视觉与空间感知",
+    "status": "训练与推理框架已存档；本机权重未核实",
+    "summary": "由 VGGT 预测深度、内参与相对位姿，经过地面拟合、特征 splatting 与射线证据，预测可见性及可见区域占据。",
+    "features": [
+      "observed 与 occupancy 双输出",
+      "累计历史融合；训练和推理共享预测几何",
+      "RGB-only 推理接口与 HTTP runtime server",
+      "Habitat UI 中同步对照 GT 与模型"
+    ],
+    "evidence": [
+      "VggtBev-worktrees/P2/README.md；models/ 中实际仅发现 SHA256SUMS"
+    ],
+    "limits": [
+      "README 描述历史 epoch-10 模型，但本机目录没有对应权重；不能把文档描述视为本机运行验收",
+      "normalized P2 与 legacy metric checkpoint 的尺度、分辨率不同"
+    ],
+    "source": [
+      "https://github.com/cicaburnwood-crypto/VggtBev"
+    ],
+    "entry": "vggt-bev-infer --model 5m --session SESSION --output-dir OUTPUT"
+  },
+  {
+    "id": "b2-sim2sim",
+    "title": "B2 MuJoCo 策略验证与地形 Demo",
+    "area": "四足运动控制",
+    "status": "已有录像与六场景仿真结果",
+    "summary": "将 Unitree B2 ONNX 策略封装成独立 MuJoCo 交互和批量评测工具，覆盖平地、转向、坡道、楼梯及粗糙地形。",
+    "features": [
+      "键盘速度控制与实时 viewer",
+      "观测/动作、关节顺序、PD 控制合同核对",
+      "视频、轨迹与 JSON 结果可追溯",
+      "仿真与实机 shadow/诊断入口分离"
+    ],
+    "evidence": [
+      "2026-08-12 smoke：6/6 completed，6 provisional passes，0 falls",
+      "平地 0.5 m/s 指令：8 s 计分窗口前进 3.3534 m，速度 RMSE 0.08118 m/s",
+      "6 段公开 Demo 与精简机器可读评测已随本仓库收录"
+    ],
+    "limits": [
+      "provisional_pass 是该次评测规则下的暂定通过，不代表统计稳定性、通用越障或实机成功",
+      "楼梯录像不自动等同 course_complete",
+      "该仓库 2026-08-12 实机记录在初始化阶段受阻，policy_steps=0；后续控制台硬件日志需分开评价"
+    ],
+    "source": [
+      "https://github.com/StevenLiudw/B2_sim2real"
+    ],
+    "entry": "python -m sim2sim_b2.run_interactive --policy models/policy.onnx"
+  },
+  {
+    "id": "b2-control-center",
+    "title": "B2 Control Center：统一控制与诊断台",
+    "area": "四足运动控制",
+    "status": "本机代码、仿真录像与硬件诊断日志已存档",
+    "summary": "统一策略装载、键盘/手柄指令、仿真、LowState 诊断、日志与录屏。",
+    "features": [
+      "Stack10 423 维输入、50 Hz、10 帧选择性历史适配",
+      "SHA-256 策略合同核对",
+      "仿真优先与硬件门控",
+      "网页控制台与目标/实际跟踪统计"
+    ],
+    "evidence": [
+      "b2_control_stack/README.md",
+      "logs/videos/ 有多次平地、草地、泥地与 10–20 cm 台阶实验录像",
+      "logs/control-center/ 有 2026-08-14 至 2026-08-20 的硬件跟踪记录"
+    ],
+    "limits": [
+      "硬件日志存在不等于稳定落地行走已验收",
+      "423 维 Stack10 与其他 45 维 actor 属于不同策略合同，不可混用",
+      "公开仓库与本机副本可能有版本差异"
+    ],
+    "source": [
+      "https://github.com/zc1q84zc-boop/b2-control-center"
+    ],
+    "entry": "python -m b2_control.cli_control_center --no-open-browser"
+  },
+  {
+    "id": "b2-piper-training",
+    "title": "B2 + PiPER 运动策略训练与可迁移交付包",
+    "area": "强化学习与移动操作",
+    "status": "已形成训练交付；楼梯增强目标未验收",
+    "summary": "保留 actor-only warm start、critic warmup、分阶段课程、确定性评估和带哈希的跨机器交付。",
+    "features": [
+      "45 actor / 251 critic / 12 leg actions，20 ms 周期",
+      "安全重复摆腿与后腿高度增量奖励",
+      "flat unlock → low speed → full range 课程",
+      "canary、平地及楼梯筛查工具与 provenance"
+    ],
+    "evidence": [
+      "桌面/B2_Piper_policy_transfer_20260821/训练部署说明",
+      "源码 bundle、覆盖补丁、checkpoint 与 flat/stairs evidence 目录存在",
+      "桌面/b2_piper_omni_training_bundle_20260818/ 作为较早交付版本"
+    ],
+    "limits": [
+      "model34 被文档定义为失败对照，不可写为成功楼梯策略",
+      "SafeRearSwingHeightIncrement 在交付时尚未训练验证",
+      "stairs_specialist 在该说明中仍是待实现工作"
+    ],
+    "source": [],
+    "entry": ""
+  },
+  {
+    "id": "atec-task-d",
+    "title": "ATEC Task D：B2PiPER 推箱与越障提交",
+    "area": "竞赛仿真",
+    "status": "多个提交方案已存档；成绩未独立核实",
+    "summary": "提交目录包含严格在线策略命令序列、攀爬策略切换以及历史动作回放版本。",
+    "features": [
+      "在线方案从 proprio 构造策略观测",
+      "120 steps settle 后推箱，再切换 climb policy",
+      "current_score 用于完成早停",
+      "保留 online 与 action replay 方案差异"
+    ],
+    "evidence": [
+      "Clear_ATEC2026_Simulation_Challenge/submissions/TaskD/README.md",
+      "submissions/ 下保留多种 Task D 提交目录"
+    ],
+    "limits": [
+      "未找到可用的该版本完整评测视频或统一成绩表",
+      "命令序列通过策略在线推理，与固定关节动作回放必须区分",
+      "不声称获奖、官方成绩或跨 seed 泛化"
+    ],
+    "source": [
+      "https://github.com/StevenLiudw/Clear_ATEC2026_Simulation_Challenge"
+    ],
+    "entry": ""
+  },
+  {
+    "id": "atec-task-e",
+    "title": "ATEC Task E：PiPER 桌面操作流水线",
+    "area": "竞赛仿真",
+    "status": "多种 baseline 与在线提交接口已存档",
+    "summary": "探索 ACT、Cartesian/cuRobo、启发式物理与成功动作 profile 的在线适配。",
+    "features": [
+      "RGB-D 目标中心估计",
+      "依据 current_score 推进目标顺序",
+      "成功 profile 选择、插值与备用重试",
+      "Docker/server/solution 提交结构"
+    ],
+    "evidence": [
+      "submissions/task_e_online_curobo_pipeline_root_submission/README.md",
+      "submissions/ 中 ACT、cuRobo、heuristic 与 replay 版本并存"
+    ],
+    "limits": [
+      "README 中 seed-120/130 full-success 为已有说明的陈述，本次没有复核对应完整原始评测",
+      "在线接口保留 profile 驱动，不能描述成每步完整重跑 SAM/AnyGrasp/cuRobo",
+      "不以官方 baseline.gif 作为个人实验成果"
+    ],
+    "source": [
+      "https://github.com/StevenLiudw/Clear_ATEC2026_Simulation_Challenge"
+    ],
+    "entry": ""
+  },
+  {
+    "id": "garbage-segmentation",
+    "title": "四类垃圾实例分割与部署导出",
+    "area": "视觉感知",
+    "status": "v4 有正式训练报告与独立测试集指标",
+    "summary": "基于 YOLO26s-Seg 进行易拉罐、西瓜皮、纸袋及纸餐盒四类分割。",
+    "features": [
+      "1070 张图片、1157 个实例",
+      "37 个拍摄 session 整组划分",
+      "train/val/test = 643/212/215 张",
+      "PyTorch、ONNX、OpenVINO 导出与代表图加载检查"
+    ],
+    "evidence": [
+      "2026-08-26 TRAINING_REPORT_V4.md：总体 mask precision 0.936，recall 0.778，mAP50 0.914，mAP50-95 0.792",
+      "模型推理约 5.9 ms/图，为报告值，不包含完整流水线",
+      "下载中另有 hybrid v2 和 v7 交付归档，本页指标仅对应 v4"
+    ],
+    "limits": [
+      "不将 v4 指标套用到 v7 或 hybrid 模型",
+      "session 隔离内部测试不替代新场景视频验收",
+      "不公开原始训练图像、权重或目标设备 TensorRT engine"
+    ],
+    "source": [],
+    "entry": ""
+  },
+  {
+    "id": "d405-hand-eye",
+    "title": "PiPER + D405 ChArUco 手眼标定",
+    "area": "机器人标定",
+    "status": "已有数学质量报告；物理工作区尚待验证",
+    "summary": "完成眼在手上的相机内参与手眼变换求解，并保留采样筛选及质量阈值。",
+    "features": [
+      "ChArUco 5×7、30 mm 方格、15 mm 标记",
+      "23 组原始采样；15 组相机标定、14 组最终手眼求解",
+      "相机重投影 RMS 0.4730 px",
+      "手眼平移 RMS 6.5509 mm、旋转 RMS 1.2771°"
+    ],
+    "evidence": [
+      "real_piper/calibration/DELIVERY_README.md",
+      "通过预设 8 mm / 2° 数学阈值"
+    ],
+    "limits": [
+      "workcell_geometry_verified=false；数学残差不等同独立物理精度",
+      "不发布相机序列号、原始实验照片或本机配置",
+      "标定交付说明与后续运行配置可能有时间差异"
+    ],
+    "source": [],
+    "entry": ""
+  },
+  {
+    "id": "piper-grasp",
+    "title": "PiPER RGB-D 抓取与 Pink 规划流水线",
+    "area": "机器人操作",
+    "status": "已有抓取计划与多次 episode 输出；成功率未汇总",
+    "summary": "连接 D405、四类 YOLO、GraspGenX 与 Pink，形成检测、点云、抓取候选、IK、碰撞检查及受控执行流程。",
+    "features": [
+      "GraspGenX 独立 ZMQ 服务",
+      "目标 mask 清理与背景点云分离",
+      "手掌、手指、相机、机械臂 proxy 检查",
+      "plan.json、碰撞场景与候选阶段间距日志"
+    ],
+    "evidence": [
+      "real_piper/README.md",
+      "outputs/ 下至少 3 份 plan.json 以及 episodes/ 多次实验目录"
+    ],
+    "limits": [
+      "输出目录存在不证明抓取成功",
+      "观测点云过滤可能忽略小/薄障碍物；部分配置不做 lift path 碰撞门控",
+      "工作区几何尚未完成验证；不声称完整自主实机系统已验收",
+      "GraspGenX 与 Pink 为上游技术，个人贡献不作未经核实的归属判断"
+    ],
+    "source": [
+      "https://github.com/JizhuoChen/real_piper",
+      "https://github.com/NVlabs/GraspGenX"
+    ],
+    "entry": ""
+  },
+  {
+    "id": "piper-desk",
+    "title": "PiPER Desk 与 VLA Rollout 采集控制台",
+    "area": "科研工程与数据采集",
+    "status": "本机源码与可迁移打包材料已存档",
+    "summary": "基于 SocketCAN 的机械臂本地网页遥操作和 VLA rollout 采集入口。",
+    "features": [
+      "遥测与只读启动",
+      "手柄 Cartesian 输入、限速与平滑目标流",
+      "PiPER Desk 保持唯一 CAN 所有权",
+      "D405、任务 prompt、dataset 路径、采集频率及 episode 保存界面"
+    ],
+    "evidence": [
+      "Documents/Codex/2026-08-26/help-install-the-piper-sdk-on/README.md",
+      "桌面/PiPER-VLA-Console-20260917.tar.gz 与 SHA256 文件"
+    ],
+    "limits": [
+      "采集器实现不代表已完成策略训练或达到任务成功率",
+      "本次未连接 CAN、相机或执行运动",
+      "归档源码未随本汇总整体重新公开"
+    ],
+    "source": [],
+    "entry": "./start-teleop.sh"
+  },
+  {
+    "id": "b2-gnss-console",
+    "title": "B2 / GNSS 与标点导航网页工具",
+    "area": "移动机器人与导航",
+    "status": "控制台交付与离线回归记录已存档",
+    "summary": "本地网页经 SSH 转发访问机器人侧控制服务，包含 GNSS、路线及本地目标操作工具。",
+    "features": [
+      "本地监听与 SSH 转发",
+      "标点、手动操作及任务状态界面",
+      "命令期限、任务心跳与源新鲜度逻辑",
+      "与机器人 ROS 2 接口配套的交付副本"
+    ],
+    "evidence": [
+      "Documents/lecoo-b2-client-CMhgihAq/README.md：记录 55 项后端测试、17 组前端回归通过",
+      "记录 HTTP 200 与网页加载冒烟；本次没有重跑这些测试"
+    ],
+    "limits": [
+      "README 明确未执行实车运动、断线停车或故障注入验收",
+      "名称含 nav2/SLAM 的当前 T9 工作目录只有空备份目录，未找到可总结的 SLAM/Nav2 实现",
+      "不发布轨迹/GPS 坐标、主机地址、凭据与网络备份"
+    ],
+    "source": [],
+    "entry": ""
+  },
+  {
+    "id": "umi-cup-screening",
+    "title": "UMI Arena 杯子任务数据筛选与模型实验",
+    "area": "具身学习与数据质量",
+    "status": "已有公开方法仓库与聚合结果",
+    "summary": "按 episode 筛选成功杯子演示，保留可逆隔离视图与人工/机器证据层，并记录后续模型实验。",
+    "features": [
+      "3975 episodes / 827323 frames 输入",
+      "3423 episodes / 746914 frames 保留",
+      "552 episodes / 80409 frames 隔离",
+      "machine 551、人工标记 14、重叠 13，union 552"
+    ],
+    "evidence": [
+      "已有公开仓库 README 的 aggregate result",
+      "公开方法包还记录 π0.5 / OpenWAM 训练及三相机仿真实验进展"
+    ],
+    "limits": [
+      "聚合值来自已有公开仓库；本机没有原始数据，未重新运行筛选",
+      "筛选结果不是机器人连续 IK、碰撞或动力学可行性证明",
+      "受限 AIRoA 数据、逐 episode 报告、视频、selection manifest 与模型不随汇总公开",
+      "不宣称完整杯子任务成功已确认"
+    ],
+    "source": [
+      "https://github.com/zc1q84zc-boop/umi-arena-cup-screening-methods"
+    ],
+    "entry": ""
+  },
+  {
+    "id": "dual-franka-yubi",
+    "title": "双 Franka + YUBI Isaac Sim 环境",
+    "area": "双臂操作与仿真",
+    "status": "已有公开环境与策略/录像接口",
+    "summary": "双 Franka Panda、YUBI 夹爪、杯盘桌面场景，支持可复现随机布局、三相机、策略接口和同步记录。",
+    "features": [
+      "reset/step API 与 state/image 观测",
+      "关节目标与末端轨迹策略 hook",
+      "有界 differential IK",
+      "MP4、关节 CSV、manifest/report 同步记录"
+    ],
+    "evidence": [
+      "已有公开 dual-franka-yubi-isaac-sim README 与源代码",
+      "环境描述包含 Isaac Sim 5.1、相机与资产审计说明"
+    ],
+    "limits": [
+      "本次未在本机启动 GPU 仿真或复核物理运行",
+      "几何、质量、摩擦与相机参数含估计值；环境完成不等于真实任务迁移成功",
+      "NVIDIA Panda 资产依赖需用户合法本地提供；YUBI CAD 保留上游许可"
+    ],
+    "source": [
+      "https://github.com/zc1q84zc-boop/dual-franka-yubi-isaac-sim"
+    ],
+    "entry": ""
+  }
+]
